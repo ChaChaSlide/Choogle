@@ -1,0 +1,24 @@
+<div class="container">	
+	<table class="table">
+		<thead>
+			<th>Read</th>
+			<th><a href="#" ng-click="$ctrl.delete()">Delete</a></th>
+			<th>Flagged</th>
+			<th>Contact</th>
+			<th>Email</th>
+			<th>Gender</th>
+			<th>Thumbnail</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="email in $ctrl.emails">
+				<td><input type="checkbox" name="Read"></td>
+				<td><input type="checkbox" name="Star"></td>
+				<td><input type="checkbox" name="Flagged"></td>
+				<td>{{email.name}}</td>
+				<td>{{email.email}}</td>
+				<td>{{email.gender}}</td>
+				<td><img src="{{email.img}}"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

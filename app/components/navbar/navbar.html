@@ -1,0 +1,25 @@
+<div class="container-fluid">
+<h4 id="moveleft"><span class="glyphicon glyphicon-envelope"></span>{{$ctrl.title}}</h4>
+
+ <input id="moveleft1" id="search-bar" name="search" type="text" placeholder="Search.." ng-model="$ctrl.searchText">
+ <input id="search-button" name="search_submit" type="submit" value="Search" ng-click="$ctrl.search($ctrl.searchText)">
+
+ 	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#" ng-click="$ctrl.user()">User</a></li>
+					<li><a href="#" ng-click="$ctrl.account()">Account</a></li>
+					<li><a href="#" ng-click="$ctrl.privacy()">privacy</a></li>		
+				</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Notifications<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" ng-click="$ctrl.email()">Emails</a></li>
+							<li><a href="#" ng-click="$ctrl.chats()">Chats</a></li>
+					</li>
+		</ul>
+		</li>
+		</ul>
+		</div>
